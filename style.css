@@ -1,0 +1,71 @@
+/* 设置body元素的样式，包括背景图片、大小、位置和重复属性，以及高度和外边距 */
+body {
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    display: flex; /* 讓 body 內的內容置中 */
+    justify-content: center; /* 水平置中 */
+    align-items: center; /* 垂直置中 */
+}
+
+.container {
+    position: relative;
+    top: 25px;
+}
+
+h1 {
+    font-size: 120px;
+    color: #0e0000;
+    margin: 0;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px;
+    color: #02fb2b;
+    text-align: center;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 18px;
+    color: #02fb2b;
+    text-align: center;
+}
+
+.btn {
+    display: block; /* 讓按鈕變成區塊元素 */
+    margin: 20px auto 0; /* 上方間距 20px，左右自動置中 */
+    padding: 12px 24px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #c800ff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+    text-align: center;
+    width: fit-content; /* 讓按鈕寬度剛好包住文字 */
+}
+
+.btn:hover {
+    background-color: #f869bf;
+}
+
+.page-layout {
+    display: flex; /* 讓內部元素（圖片 + 404 內容）橫向排列 */
+    align-items: center; /* 讓圖片與文字對齊 */
+    gap: 40px; /* 讓圖片與 404 內容保持間距 */
+}
+
+.image-container {
+    margin: 0 30px;
+}
+
+.side-image {
+    width: 120px; /* 控制圖片寬度 */
+    height: auto; /* 保持圖片比例 */
+}
+
